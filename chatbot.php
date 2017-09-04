@@ -1,7 +1,7 @@
 <?php
 // parameters
 $hubVerifyToken = 'provatokenverificatoperilbot';
-$accessToken =   "EAACFqfzrC2kBAMZClmoJg5C2XPlryPdKToKNr2C7CKahkyCrLaJBIZAk9iS061WW0OwI31XyGnslZCaMTca0IpzN34QF5h9xgkP5AeOyhNMnolPnUe5CXs03C3qaUWZC7itotalFfocxVnDUMO35Mobw8k1zdjXnQVd1slcY6AZDZD";
+$accessToken = "EAACFqfzrC2kBAMZClmoJg5C2XPlryPdKToKNr2C7CKahkyCrLaJBIZAk9iS061WW0OwI31XyGnslZCaMTca0IpzN34QF5h9xgkP5AeOyhNMnolPnUe5CXs03C3qaUWZC7itotalFfocxVnDUMO35Mobw8k1zdjXnQVd1slcY6AZDZD";
 // check token at setup
 if ($_REQUEST['hub_verify_token'] === $hubVerifyToken) {
   echo $_REQUEST['hub_challenge'];
@@ -29,3 +29,4 @@ if(!empty($input)){
 $result = curl_exec($ch);
 }
 curl_close($ch);
+?>
